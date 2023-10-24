@@ -1,0 +1,23 @@
+import "../CSS/Header.css"
+import { Link } from 'react-router-dom';
+import React from 'react';
+
+function Header(props) {
+  return (
+    <div className="header">
+      <div className="header-left">
+        <h1>DEV@Deakin</h1>
+      </div>
+      <div className="header-center">
+        <input placeholder="Search.." className="header-search" />
+      </div>
+      <div className="header-right">
+        <Link to="/post">Post</Link>
+        <Link to="/login">Login</Link>
+      </div>
+    </div>
+  );
+}
+
+export default Header;
+
